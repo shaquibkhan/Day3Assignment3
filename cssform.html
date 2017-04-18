@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Form</title>
+	<style type="text/css">
+		body{background-color: skyblue;}
+		.d1{
+			background-color: powderblue;
+			border-radius: 15px;
+			padding: 15px;
+		}
+		#button{
+			text-align: center;}
+			#d2{background-color: black;
+				color: white;}
+				.heading{color:red;}
+				body{
+					background-image: url("formpic.jpg");
+	 				background-size: 1600px 390px;
+				}
+				h1{
+					text-align: center;
+					color: gold;
+					font-family: 'comic sans MS';
+				}
+				.label{
+					display: block;
+					height: px;
+				}
+				input,textarea{
+					height: 30px;
+					border-radius: 15px;
+				}
+	</style>
+</head>
+			<body>
+			<h1>Payment Gateway</h1>
+			<header><h3 class="heading"><i>Step:1 Your Details</i></h3></header><br> <!-- its a header in which h3 tag has class attribute  heading just to do some styling-->
+			<div class="d1">
+			<form>				<!-- its a form element (semantic tag) which is comprised of of input tag "Name,Email,Phone" -->
+			<label class="label">Name <input type="name" name="name" placeholder="Your name.."></label> <!-- nbsp stands for NON BREAKING SPACE which is only used to give spaces -->	
+			</div><br>
+			<div class="d1">
+			<label class="label">Email <input type="Email" name="email" placeholder="example@domain.com"></label>
+			</div><br>
+		
+			<div class="d1">
+			<label class="label">Phone <input type="Phone" name="Phone" placeholder="e.g +91"></label>
+			</div><br>
+						<header><h3 class="heading"><i>Step:2 Delivery address</i></h3></header><br> <!-- its a header element (semantic tag) which is comprised of of input tag "address,post code,country" -->
+						<div class="d1">
+						<label>Address <textarea rows=3 cols=25 placeholder="Your address.."></textarea></label>	
+						</div><br>
+						<div class="d1">
+						<label>Post code<input type="Postal" name="postal"></label>
+						</div><br>
+						<div class="d1">
+						<label>Country <input type="Country" name="Country" placeholder="India"></label>
+						</div><br>
+										<header><h3 class="heading"><i>Step:3 Card details</i></h3></header><br>
+										<!-- its a another header e which is comprised of of input tag "Card type,Card num,Sec code & Name on card" -->
+										<div class="d1">
+										Card type <br>
+										<input type="radio" name="gender" ><i style="color:#FF3333;">VISA</i>    <!-- Defines a radio button (for selecting one of many choices) -->
+										<input type="radio" name="gender"><i style="color:#3633FF";>AmEx</i>
+										<input type="radio" name="gender"><i style="color:#FF33D1";>Mastercard</i>
+										</div><br>
+										<div class="d1">
+										<label>Card number <input type="cardnumber" name="cardnumber" placeholder="XXXX-XXXX-XXXX"></label>
+										</div><br>
+										<div class="d1">
+										<label>Security code <input type="Security" name="code"></label>
+										</div><br>
+										<div class="d1">
+									    <label>Name on card <input type="Name" name="name1" placeholder="same name as on card"></label>
+										</div><br>
+										<div id="button">
+										<label class="submit"><input id="d2" type="submit" value="Buy IT!"></label> <!-- Defines a submit button (for submitting the form) -->
+										</div>
+										</form>
+</body>
+</html>
